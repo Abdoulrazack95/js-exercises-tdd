@@ -11,7 +11,7 @@
 function factorial(int) {
   var factor = 1;
   for(var i = 1; i <= int; i++){
-    factor = factor *i;
+    factor = factor * i;
   }
   return factor;   
 }
