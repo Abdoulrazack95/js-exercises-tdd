@@ -2,10 +2,14 @@ function removeVowels(word) {
     var characters = word.split('');
 
     var result = [];
+    var specialCharact = "~!@#$%^&*()-_=+[]\{}|;':\",./<>?".split("");
 
     characters.forEach(function (character) {
-        if (character !== 'a' && character !== 'o' && character !== 'i' && character !== 'e'
-        && character !== 'u' && character === 'y') {
+        if (character.toLowerCase() !== 'a' && character.toLowerCase() !== 'o' && character.toLowerCase() !== 'i' && character.toLowerCase() !== 'e'
+        && character.toLowerCase() !== 'u' && !specialCharact.includes(character)){ 
+        
+        // && character !== 'A' && character !== 'O' && character !== 'I' && character !== 'E'
+        // && character !== 'U') {
             result.push(character)
         } else {
             result.push('');
