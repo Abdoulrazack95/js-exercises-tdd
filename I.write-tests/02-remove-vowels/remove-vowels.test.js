@@ -13,6 +13,5 @@ test.only("does not remove y from the word", function(){
     var letterY = "y";
     var expected = "y";
     var output = removeVowels(letterY);
-
     expect(output).toEqual(expected);
 });

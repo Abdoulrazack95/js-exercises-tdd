@@ -11,7 +11,6 @@ function removeVowels(word) {
             result.push('');
         }
     })
-
     return result.join('');
 }
 
